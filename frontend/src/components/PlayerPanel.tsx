@@ -29,7 +29,7 @@ export function PlayerPanel({
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
           <h3 className="font-black text-xl text-gray-900">
-            Player {player.index + 1}
+            {player.username || `Player ${player.index + 1}`}
             {isStartingPlayer && <span className="text-sm text-blue-700 font-bold ml-1">(Starting)</span>}
           </h3>
           {player.hasFolded && (

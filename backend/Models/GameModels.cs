@@ -230,6 +230,7 @@ public sealed class BettingState
     public bool CanBet(PlayerState player) => CurrentBet == 0 && player.Chips > 0;
     public bool CanCall(PlayerState player) => CurrentBet > 0 && player.Chips > 0;
     public bool CanRaise(PlayerState player) => CurrentBet > 0 && CurrentBet < Cap && player.Chips > 0;
+    public bool CanFold(PlayerState player) => true; // Players can always fold
 }
 
 public sealed class ActionLogEntry

@@ -13,6 +13,7 @@ public sealed class GameState
     public List<ActionLogEntry> ActionLog { get; }
     public HandStrength[]? ShowdownResults { get; private set; }
     public int? WinnerIndex { get; private set; }
+    public bool IsMatchComplete => Phase == Phase.MatchComplete;
 
     private const int AnteAmount = 5;
     private const int MaxHands = 10;

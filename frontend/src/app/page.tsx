@@ -23,15 +23,23 @@ export default function Home() {
           </div>
         </div>
 
-        <Link
-          href="/play"
-          className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold rounded-lg transition-colors shadow-lg hover:shadow-xl transform hover:scale-105"
-        >
-          Start Playing
-        </Link>
+        <div className="flex gap-4 justify-center">
+          <Link
+            href="/lobby"
+            className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold rounded-lg transition-colors shadow-lg hover:shadow-xl transform hover:scale-105"
+          >
+            Play Online
+          </Link>
+          <Link
+            href="/play"
+            className="inline-block px-8 py-4 bg-gray-600 hover:bg-gray-700 text-white text-xl font-semibold rounded-lg transition-colors shadow-lg hover:shadow-xl transform hover:scale-105"
+          >
+            Local Hot-Seat
+          </Link>
+        </div>
 
         <div className="mt-8 text-sm text-gray-500">
-          <p>Hot-seat multiplayer: two players take turns on the same device</p>
+          <p>Play online with a friend or local hot-seat mode</p>
         </div>
       </div>
     </div>

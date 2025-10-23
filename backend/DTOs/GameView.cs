@@ -25,6 +25,7 @@ public sealed class CardView
 public sealed class PlayerView
 {
     public int Index { get; set; }
+    public string Username { get; set; } = "";
     public int Chips { get; set; }
     public bool HasFolded { get; set; }
     public List<CardView> Hand { get; set; } = new();

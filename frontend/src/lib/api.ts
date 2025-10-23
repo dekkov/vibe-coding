@@ -9,6 +9,7 @@ export type CardView = {
 
 export type PlayerView = {
   index: number;
+  username?: string;
   chips: number;
   hasFolded: boolean;
   hand: CardView[];

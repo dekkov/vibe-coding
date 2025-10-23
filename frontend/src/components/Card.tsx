@@ -22,6 +22,22 @@ const suitColors: Record<string, string> = {
 };
 
 export function Card({ card, selected = false, onClick, className = "" }: CardProps) {
+  // Show card back if rank and suit are null (masked opponent card)
+  if (card.rank === null && card.suit === null && !card.isJoker) {
+    return (
+      <div
+        className={`
+          w-16 h-24 bg-gradient-to-br from-blue-600 to-blue-800 
+          border-2 border-blue-900 rounded-lg flex items-center justify-center
+          transition-all duration-200
+          ${className}
+        `}
+      >
+        <div className="text-white font-bold text-3xl">🂠</div>
+      </div>
+    );
+  }
+
   if (card.isJoker) {
     return (
       <div
