@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hoangtran/vibe coding/poker-17/backend/Backend.csproj": {}
+    "/Users/hoangtran/vibe-coding/backend/Backend.csproj": {}
   },
   "projects": {
-    "/Users/hoangtran/vibe coding/poker-17/backend/Backend.csproj": {
+    "/Users/hoangtran/vibe-coding/backend/Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hoangtran/vibe coding/poker-17/backend/Backend.csproj",
+        "projectUniqueName": "/Users/hoangtran/vibe-coding/backend/Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "/Users/hoangtran/vibe coding/poker-17/backend/Backend.csproj",
+        "projectPath": "/Users/hoangtran/vibe-coding/backend/Backend.csproj",
         "packagesPath": "/Users/hoangtran/.nuget/packages/",
-        "outputPath": "/Users/hoangtran/vibe coding/poker-17/backend/obj/",
+        "outputPath": "/Users/hoangtran/vibe-coding/backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/hoangtran/.nuget/NuGet/NuGet.Config"
@@ -44,9 +44,21 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "AspNetCoreRateLimit": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.1, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.9.32, )"
             }
           },
           "imports": [
